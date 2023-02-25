@@ -1,3 +1,6 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
 :root{
     --dark-purple: #9470ce;
     --med-purple: #A083D5;
@@ -7,6 +10,7 @@
     --dark-yellow: #efcf20;
     --text-color: #000;
 }
+
 body{
     background: var(--dark-purple);
     color: var(--text-color);
@@ -25,7 +29,7 @@ header{
     transition: .3s;
 }
 .title{
-    min-height: 100vh;
+    min-height: 10vh;
     height: 100%;
     width: 100%;
     background: url(../img/background2.jpeg);
@@ -36,24 +40,38 @@ header{
     grid-template-columns: repeat(2, 1fr);
     align-items: top;
     grid-gap: 4rem;
+    text-align: end;
 }
-.time{
+
+.leftdiv{
+    float: left;
     background: #A083D5;
-    width: 64%;
-    margin: 100px auto;
-    padding:  70px 150px;
-    /*align-items: center;
+    width: 45%;
+    margin: 1px auto;
+    /*padding:  70px 150px;*/
+    align-items: top;
     justify-content: center;
     text-align: center;
-    border-radius: 12px;*/
+    border-radius: 12px;
 }
-.time .action input[type="time"]{
+.leftdiv .action input[type="time"]{
     max-width: 100%;
     width: 470px;
-    padding: 12px 15px;
+    padding: 10px 12px;
     color: var(--text-color);
     border: none;
     outline: none;
     margin: 0 10px 20px 0;
     border-radius: 30px;
 }
+.rightdiv{
+    float: right;
+    width: 45%;
+    margin: 1px auto;
+    text-align: center;
+}
+div{
+    padding : 1%;
+    width: 47.5%
+}
+

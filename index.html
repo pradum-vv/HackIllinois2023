@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html> 
     <head> 
-        <link  rel="stylesheet" href="../css/design.css"> 
+        <link  rel="stylesheet" href="design.css"> 
     </head>
     <body> 
         <section class="title" id="title">
             <h1>I Need A Break</h1>
         </section>
-        <section class="time" id="time" > 
+        <section class="leftdiv" id="time" > 
             <div class="action"> 
-                <p> How long do you want your break to be (in minutes)? </p>
+                <p> How long do you want your break to be? </p>
                 <input type="text" name="duration" id="usertime" placeholder="minutes"/> 
                 <button onclick="getDuration()">Submit</button>
             </div>
         </section>
+        <section class="rightdiv">
+            <h2> Activity Options! </h2>
+        </section>
+        <script src="myscripts.js"> </script> 
     </body> 
-    <script src="../myscripts.js"> </script> 
 </html> 
