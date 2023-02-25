@@ -1,0 +1,59 @@
+:root{
+    --dark-purple: #9470ce;
+    --med-purple: #A083D5;
+    --light-purple: #B19cd8;
+    --light-yelllow: #F8f3a6;
+    --med-yellow: #F4e064;
+    --dark-yellow: #efcf20;
+    --text-color: #000;
+}
+body{
+    background: var(--dark-purple);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: .3s;
+}
+.title{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: url(../img/background2.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: top;
+    grid-gap: 4rem;
+}
+.time{
+    background: #A083D5;
+    width: 64%;
+    margin: 100px auto;
+    padding:  70px 150px;
+    /*align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;*/
+}
+.time .action input[type="time"]{
+    max-width: 100%;
+    width: 470px;
+    padding: 12px 15px;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: 30px;
+}
