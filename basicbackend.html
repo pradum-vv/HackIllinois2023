@@ -46,6 +46,9 @@
         console.log(activities);
 
         function getActivities(time, acts){
+            if(time == 420 || time == 69){
+                return ["are u 12?", "", "", "", ""];
+            }
             toreturn = [];
             count = 0;
             while(toreturn.length < 5 && count != 100){
@@ -62,6 +65,9 @@
                     }
                 }
                 count += 1;
+            }
+            while(toreturn.length < 5){
+                toreturn.push("");
             }
             return toreturn;
         }
