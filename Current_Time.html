@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let sec = Date.now()/1000;
+            let hours = sec/3600;
+            var offset = new Date().getTimezoneOffset();
+            current_hours = Math.floor((hours-offset/60) % 24);
+            let minutes = sec/60;
+            current_minutes = Math.floor((hminutes-offset) % 60);
+            document.write(current_hours);
+            document.write(current_minutes);
+            //current_hours gives the exact time of the day in any time zone in a 24 hour clock
+            ////current_minutes gives the exact time of the day in any time zone in a 24 hour clock
+        </script>  
+    </body>
+</html>
