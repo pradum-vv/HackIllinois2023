@@ -12,6 +12,7 @@ function getDuration() {
 //display options on page
 function showResults(data) {
   let list = document.getElementById('options');
+  list.innerHTML = "";
   data.forEach((item)=>{
     let li = document.createElement("li");
     li.innerText = item; 
@@ -49,7 +50,7 @@ function readCSVstr(filestr){
 
 function getActivities(time, acts){
   if(time == 420 || time == 69){
-    return ["are u 12?"];
+    return ["are u 12?", "", "", "", ""];
   }
   toreturn = [];
   count = 0;
@@ -67,6 +68,9 @@ function getActivities(time, acts){
           }
       }
       count += 1;
+  }
+  while(toreturn.length < 5) {
+    toreturn.push("");
   }
   return toreturn;
 }
