@@ -15,7 +15,16 @@ body{
     background: var(--dark-purple);
     color: var(--text-color);
 }
-header{
+h2 {
+    color:#efcf20;
+    text-align: center;
+    font-size:xx-large;
+}
+h3 {
+   color:var(--light-yelllow); 
+   text-align: center;
+}
+/*header{
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,7 +36,7 @@ header{
     background: transparent;
     padding: 30px 18%;
     transition: .3s;
-}
+}*/
 .title{
     min-height: 10vh;
     height: 100%;
@@ -42,36 +51,37 @@ header{
     grid-gap: 4rem;
     text-align: end;
 }
-
 .leftdiv{
     float: left;
     background: #A083D5;
-    width: 45%;
+    width: 50%;
     margin: 1px auto;
-    /*padding:  70px 150px;*/
+    text-align: center;
+    /*padding:  70px 150px;
     align-items: top;
     justify-content: center;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 12px;*/
 }
 .leftdiv .action input[type="time"]{
     max-width: 100%;
-    width: 470px;
-    padding: 10px 12px;
+    /*width: 470px;
+    padding: 5px 6px;
     color: var(--text-color);
     border: none;
     outline: none;
-    margin: 0 10px 20px 0;
-    border-radius: 30px;
+    margin: 0 10px 10px 0;
+    border-radius: 15px;*/
 }
 .rightdiv{
     float: right;
-    width: 45%;
+    background-color:#B19cd8;
+    width: 50%;
     margin: 1px auto;
     text-align: center;
 }
 div{
     padding : 1%;
-    width: 47.5%
+    width: 50%
 }
 
