@@ -3,8 +3,11 @@
 <body>
     <p id="demo"></p>
     <script>
+        // defines activity class
         class Activity {
             constructor(datastring){
+                // datastring is a string from the csv file
+                // splits it into array and assigns variables if they exist
                 var array = datastring.split(',');
                 this.name = array[0];
                 if(array.length > 0 && array[1] != ""){
@@ -16,9 +19,10 @@
             }
 
             canDo(time){
+                // determines if an activity is doable given that the user has 'time' time.
                 var minenough = (this.min == null || this.min <= time);
                 var maxenough = (this.max == null || this.max >= time);
-                return minenough && maxenough;
+                return minenough && maxenough && (time != null);
             }
         }
 
@@ -44,6 +48,7 @@
             
             console.log(activities);
 
+            // generates list of activities the user can do
             function getActivities(time, acts){
                 if(time == 420 || time == 69){
                     return ["are u 12?", "", "", "", ""];
@@ -78,6 +83,7 @@
             console.log(getActivities(3, activities));
         }
 
+        // gets location, runs the first thing if access is granted, runs the second if not
         navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors);
         //var latitude, longitude;
 
